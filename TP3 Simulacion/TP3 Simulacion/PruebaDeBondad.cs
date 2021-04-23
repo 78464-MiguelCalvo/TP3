@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TP3_Simulacion.Clases;
 
 namespace TP3_Simulacion
 {
@@ -79,56 +80,56 @@ namespace TP3_Simulacion
         private void btnGenerar_Click(object sender, EventArgs e)
         {
             GenerarVariablesAleatorias Metodos = new GenerarVariablesAleatorias();
-            List<double> list = new List<double>();
-            int N = Convert.ToInt32(txtN.Text);
+            List<double> listaNumeros = new List<double>();
+            int tamañoTotalMuestra = Convert.ToInt32(txtN.Text);
             
 
             // Distribucion Uniforme
             if (rbUniforme.Checked)
             {
-                int min = Convert.ToInt32(txtMin.Text);
-                int max = Convert.ToInt32(txtMax.Text);
+                int valorMinimoPosible = Convert.ToInt32(txtMin.Text);
+                int valorMaximoPosible = Convert.ToInt32(txtMax.Text);
 
-                list = Metodos.SerieDisUniforme(N, min, max);               
+                listaNumeros = Metodos.SerieDisUniforme(tamañoTotalMuestra, valorMinimoPosible, valorMaximoPosible);               
             }
 
             // Distribucion Exponencial Negativa
             if (rdExponencialNegativa.Checked)
             {
-                double Media = Convert.ToDouble(txtMedia.Text);
+                double media = Convert.ToDouble(txtMedia.Text);
 
-                list = Metodos.SerieExpNeg(N, Media);
+                listaNumeros = Metodos.SerieExpNeg(tamañoTotalMuestra, media);
             }
 
             // Distribucion Normal
             if (rdNormal.Checked)
             {
-                list = Metodos.SerieDisNormal(N);
+                listaNumeros = Metodos.SerieDisNormal(tamañoTotalMuestra);
             }
 
             // Distribucion Poisson
             if (rdPoisson.Checked)
             {
                 double lambda = Convert.ToDouble(txtLambda.Text);
-                list = Metodos.SerieDisPoisson(lambda);
+                listaNumeros = Metodos.SerieDisPoisson(lambda);
             }
 
             // Agregar valores a la lista
-            foreach (var item in list)
+            foreach (var numeroAleatorio in listaNumeros)
             {
-                lstNumeros.Items.Add(Math.Round(item,4));
+                lstNumeros.Items.Add(Math.Round(numeroAleatorio,4));
             }
 
             // Prueba de bondad
             try
             {
-                if (txtCantidadIntervalos.Text.Equals(""))
+                if (txtCantidadIntervalos.Text.Equals(String.Empty))
                 {
-                    MessageBox.Show("debe completar todos los campos");
+                    MessageBox.Show("Por favor, debe completar todos los campos.");
                 }
                 else
                 {
-                    double[] extremos = CalcularExtremos(list);
+                    double[] extremos = CalcularExtremos(listaNumeros);
                     double valorMin = Math.Round(extremos[0],4) ;
                     double valorMax = Math.Round(extremos[1],4);
                     double Prueba = 0;
@@ -222,11 +223,12 @@ namespace TP3_Simulacion
                     }
                 }
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                MessageBox.Show("debe limpiar los campos");
+                MessageBox.Show(e.Message);
             }
         }
+
 
         public double[] CalcularExtremos(List<double> lista)
         {
