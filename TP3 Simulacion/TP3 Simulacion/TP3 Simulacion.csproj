@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\Frecuencia.cs" />
     <Compile Include="Clases\Intervalo.cs" />
     <Compile Include="Clases\TestChiCuadrado.cs" />
     <Compile Include="PruebaDeBondad.cs">

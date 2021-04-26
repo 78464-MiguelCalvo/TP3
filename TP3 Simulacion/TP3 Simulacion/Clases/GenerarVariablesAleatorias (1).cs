@@ -13,7 +13,7 @@ namespace BibliotecaTP3SIM
         }
         
 
-        private double DisUniforme(double pseudo, int min, int max)
+        private double DistribucionUniforme(double pseudo, int min, int max)
         {
             double res = 0;
             res = min + (pseudo * (max - min));
@@ -21,7 +21,7 @@ namespace BibliotecaTP3SIM
         }
 
 
-        private double ExpNeg(double pseudo, double media)
+        private double ExponencialNegativa(double pseudo, double media)
         {
             double frec = (1 / media);
             double res = 0;
@@ -29,7 +29,7 @@ namespace BibliotecaTP3SIM
             return res;
         }
 
-        public List<double> SerieDisPoisson(double lambda)
+        public List<double> SerieDistribucionPoisson(double lambda)
         {
             double p = 1;
             int x = -1;
@@ -48,7 +48,7 @@ namespace BibliotecaTP3SIM
         }
 
 
-        public List<double> SerieDisNormal(int n)
+        public List<double> SerieDistribucionNormal(int n)
         {
             bool ban = false;
             var Random = new Random();
@@ -78,7 +78,7 @@ namespace BibliotecaTP3SIM
         }
 
         
-        public List<double> SerieDisUniforme(int n, int min, int max)
+        public List<double> SerieDistribucionUniforme(int n, int min, int max)
         {
             List<double> lista = new List<double>();
             double xi = 0;
@@ -86,21 +86,21 @@ namespace BibliotecaTP3SIM
             for (int i = 0; i < n; i++)
             {
                 double psedef = Random.NextDouble();
-                double num = DisUniforme(psedef, min, max);
+                double num = DistribucionUniforme(psedef, min, max);
                 lista.Add(num);
             }
             return lista;
         }
 
 
-        public List<double> SerieExpNeg(int n, double media)
+        public List<double> SerieExponencialNegativa(int n, double media)
         {
             List<double> lista = new List<double>();
             var Random = new Random();
             for (int i = 0; i < n; i++)
             {
                 double psedef = Random.NextDouble();
-                double num = ExpNeg(psedef, media);
+                double num = ExponencialNegativa(psedef, media);
                 lista.Add(num);
 
             }

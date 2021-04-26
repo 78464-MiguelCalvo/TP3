@@ -90,7 +90,7 @@ namespace TP3_Simulacion
                 int valorMinimoPosible = Convert.ToInt32(txtMin.Text);
                 int valorMaximoPosible = Convert.ToInt32(txtMax.Text);
 
-                listaNumeros = Metodos.SerieDisUniforme(tamañoTotalMuestra, valorMinimoPosible, valorMaximoPosible);               
+                listaNumeros = Metodos.SerieDistribucionUniforme(tamañoTotalMuestra, valorMinimoPosible, valorMaximoPosible);               
             }
 
             // Distribucion Exponencial Negativa
@@ -98,20 +98,20 @@ namespace TP3_Simulacion
             {
                 double media = Convert.ToDouble(txtMedia.Text);
 
-                listaNumeros = Metodos.SerieExpNeg(tamañoTotalMuestra, media);
+                listaNumeros = Metodos.SerieExponencialNegativa(tamañoTotalMuestra, media);
             }
 
             // Distribucion Normal
             if (rdNormal.Checked)
             {
-                listaNumeros = Metodos.SerieDisNormal(tamañoTotalMuestra);
+                listaNumeros = Metodos.SerieDistribucionNormal(tamañoTotalMuestra);
             }
 
             // Distribucion Poisson
             if (rdPoisson.Checked)
             {
                 double lambda = Convert.ToDouble(txtLambda.Text);
-                listaNumeros = Metodos.SerieDisPoisson(lambda);
+                listaNumeros = Metodos.SerieDistribucionPoisson(lambda);
             }
 
             // Agregar valores a la lista
@@ -132,15 +132,14 @@ namespace TP3_Simulacion
                     double[] extremos = CalcularExtremos(listaNumeros);
                     double valorMin = Math.Round(extremos[0],4) ;
                     double valorMax = Math.Round(extremos[1],4);
-                    double Prueba = 0;
                     double ancho = Math.Round((valorMax - valorMin) / Convert.ToDouble(txtCantidadIntervalos.Text),4);
 
-                    int FreqEs = 0;
 
                     for (int i = 0; i < Convert.ToInt32(txtCantidadIntervalos.Text); i++)
                     {
 
                         int contador = 0;
+                        Intervalo intervalo = new Intervalo();
 
                         DataGridViewRow fila = new DataGridViewRow();
 
@@ -223,9 +222,9 @@ namespace TP3_Simulacion
                     }
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                MessageBox.Show(e.Message);
+                MessageBox.Show("Error.");
             }
         }
 
