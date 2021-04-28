@@ -1,0 +1,32 @@
+C:\Users\migue\OneDrive\Escritorio\Simulacion\TP3\TP3 Simulacion\TP3 Simulacion\bin\Debug\TP3 Simulacion.exe.config
+C:\Users\migue\OneDrive\Escritorio\Simulacion\TP3\TP3 Simulacion\TP3 Simulacion\bin\Debug\TP3 Simulacion.exe
+C:\Users\migue\OneDrive\Escritorio\Simulacion\TP3\TP3 Simulacion\TP3 Simulacion\bin\Debug\TP3 Simulacion.pdb
+C:\Users\migue\OneDrive\Escritorio\Simulacion\TP3\TP3 Simulacion\TP3 Simulacion\obj\Debug\TP3 Simulacion.csprojAssemblyReference.cache
+C:\Users\migue\OneDrive\Escritorio\Simulacion\TP3\TP3 Simulacion\TP3 Simulacion\obj\Debug\TP3_Simulacion.Properties.Resources.resources
+C:\Users\migue\OneDrive\Escritorio\Simulacion\TP3\TP3 Simulacion\TP3 Simulacion\obj\Debug\TP3 Simulacion.csproj.GenerateResource.cache
+C:\Users\migue\OneDrive\Escritorio\Simulacion\TP3\TP3 Simulacion\TP3 Simulacion\obj\Debug\TP3 Simulacion.csproj.CoreCompileInputs.cache
+C:\Users\migue\OneDrive\Escritorio\Simulacion\TP3\TP3 Simulacion\TP3 Simulacion\obj\Debug\TP3 Simulacion.exe
+C:\Users\migue\OneDrive\Escritorio\Simulacion\TP3\TP3 Simulacion\TP3 Simulacion\obj\Debug\TP3 Simulacion.pdb
+C:\Users\migue\OneDrive\Escritorio\Simulacion\TP3\TP3 Simulacion\TP3 Simulacion\obj\Debug\TP3_Simulacion.PruebaDeBondad.resources
+C:\Users\migue\OneDrive\Escritorio\TP3-main\TP3 Simulacion\TP3 Simulacion\bin\Debug\TP3 Simulacion.exe.config
+C:\Users\migue\OneDrive\Escritorio\TP3-main\TP3 Simulacion\TP3 Simulacion\bin\Debug\TP3 Simulacion.exe
+C:\Users\migue\OneDrive\Escritorio\TP3-main\TP3 Simulacion\TP3 Simulacion\bin\Debug\TP3 Simulacion.pdb
+C:\Users\migue\OneDrive\Escritorio\TP3-main\TP3 Simulacion\TP3 Simulacion\obj\Debug\TP3 Simulacion.csprojAssemblyReference.cache
+C:\Users\migue\OneDrive\Escritorio\TP3-main\TP3 Simulacion\TP3 Simulacion\obj\Debug\TP3_Simulacion.Properties.Resources.resources
+C:\Users\migue\OneDrive\Escritorio\TP3-main\TP3 Simulacion\TP3 Simulacion\obj\Debug\TP3_Simulacion.PruebaDeBondad.resources
+C:\Users\migue\OneDrive\Escritorio\TP3-main\TP3 Simulacion\TP3 Simulacion\obj\Debug\TP3 Simulacion.csproj.GenerateResource.cache
+C:\Users\migue\OneDrive\Escritorio\TP3-main\TP3 Simulacion\TP3 Simulacion\obj\Debug\TP3 Simulacion.csproj.CoreCompileInputs.cache
+C:\Users\migue\OneDrive\Escritorio\TP3-main\TP3 Simulacion\TP3 Simulacion\obj\Debug\TP3 Simulacion.exe
+C:\Users\migue\OneDrive\Escritorio\TP3-main\TP3 Simulacion\TP3 Simulacion\obj\Debug\TP3 Simulacion.pdb
+C:\Users\migue\OneDrive\Escritorio\TP3-main\TP3 Simulacion\TP3 Simulacion\bin\Debug\LiveCharts.dll
+C:\Users\migue\OneDrive\Escritorio\TP3-main\TP3 Simulacion\TP3 Simulacion\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\migue\OneDrive\Escritorio\TP3-main\TP3 Simulacion\TP3 Simulacion\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\migue\OneDrive\Escritorio\TP3-main\TP3 Simulacion\TP3 Simulacion\bin\Debug\LiveCharts.pdb
+C:\Users\migue\OneDrive\Escritorio\TP3-main\TP3 Simulacion\TP3 Simulacion\bin\Debug\LiveCharts.xml
+C:\Users\migue\OneDrive\Escritorio\TP3-main\TP3 Simulacion\TP3 Simulacion\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\migue\OneDrive\Escritorio\TP3-main\TP3 Simulacion\TP3 Simulacion\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\migue\OneDrive\Escritorio\TP3-main\TP3 Simulacion\TP3 Simulacion\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\migue\OneDrive\Escritorio\TP3-main\TP3 Simulacion\TP3 Simulacion\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\migue\OneDrive\Escritorio\TP3-main\TP3 Simulacion\TP3 Simulacion\obj\Debug\TP3 Simulacion.csproj.CopyComplete
+C:\Users\migue\OneDrive\Escritorio\TP3-main\TP3 Simulacion\TP3 Simulacion\bin\Debug\MathNet.Numerics.dll
+C:\Users\migue\OneDrive\Escritorio\TP3-main\TP3 Simulacion\TP3 Simulacion\bin\Debug\MathNet.Numerics.xml
