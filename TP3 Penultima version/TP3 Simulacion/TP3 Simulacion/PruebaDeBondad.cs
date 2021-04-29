@@ -404,5 +404,7 @@ namespace TP3_Simulacion
         {
             return (ChiSquared.InvCDF(cantidadIntervalos - 1, 1 - alfa));
         }
+
+
     }
 }

@@ -52,3 +52,25 @@ D:\Facultad\2021\SIM\TPs\TP3\TP3Miguel\TP3\TP3 Penultima version\TP3 Simulacion\
 D:\Facultad\2021\SIM\TPs\TP3\TP3Miguel\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\obj\Debug\TP3 Simulacion.csproj.CopyComplete
 D:\Facultad\2021\SIM\TPs\TP3\TP3Miguel\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\obj\Debug\TP3 Simulacion.exe
 D:\Facultad\2021\SIM\TPs\TP3\TP3Miguel\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\obj\Debug\TP3 Simulacion.pdb
+D:\Projects\code\aaa_GIT\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\bin\Debug\TP3 Simulacion.exe.config
+D:\Projects\code\aaa_GIT\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\bin\Debug\TP3 Simulacion.exe
+D:\Projects\code\aaa_GIT\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\bin\Debug\TP3 Simulacion.pdb
+D:\Projects\code\aaa_GIT\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\bin\Debug\LiveCharts.dll
+D:\Projects\code\aaa_GIT\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\bin\Debug\LiveCharts.WinForms.dll
+D:\Projects\code\aaa_GIT\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\bin\Debug\LiveCharts.Wpf.dll
+D:\Projects\code\aaa_GIT\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\bin\Debug\MathNet.Numerics.dll
+D:\Projects\code\aaa_GIT\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\bin\Debug\LiveCharts.pdb
+D:\Projects\code\aaa_GIT\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\bin\Debug\LiveCharts.xml
+D:\Projects\code\aaa_GIT\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\bin\Debug\LiveCharts.WinForms.pdb
+D:\Projects\code\aaa_GIT\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\bin\Debug\LiveCharts.WinForms.xml
+D:\Projects\code\aaa_GIT\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\bin\Debug\LiveCharts.Wpf.pdb
+D:\Projects\code\aaa_GIT\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\bin\Debug\LiveCharts.Wpf.xml
+D:\Projects\code\aaa_GIT\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\bin\Debug\MathNet.Numerics.xml
+D:\Projects\code\aaa_GIT\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\obj\Debug\TP3 Simulacion.csprojAssemblyReference.cache
+D:\Projects\code\aaa_GIT\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\obj\Debug\TP3_Simulacion.Properties.Resources.resources
+D:\Projects\code\aaa_GIT\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\obj\Debug\TP3_Simulacion.PruebaDeBondad.resources
+D:\Projects\code\aaa_GIT\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\obj\Debug\TP3 Simulacion.csproj.GenerateResource.cache
+D:\Projects\code\aaa_GIT\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\obj\Debug\TP3 Simulacion.csproj.CoreCompileInputs.cache
+D:\Projects\code\aaa_GIT\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\obj\Debug\TP3 Simulacion.csproj.CopyComplete
+D:\Projects\code\aaa_GIT\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\obj\Debug\TP3 Simulacion.exe
+D:\Projects\code\aaa_GIT\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\obj\Debug\TP3 Simulacion.pdb

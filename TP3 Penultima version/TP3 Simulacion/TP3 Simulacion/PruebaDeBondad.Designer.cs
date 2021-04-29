@@ -74,6 +74,7 @@ namespace TP3_Simulacion
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(44)))), ((int)(((byte)(46)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.rdExponencialNegativa);
             this.panel1.Controls.Add(this.rdPoisson);
@@ -81,25 +82,27 @@ namespace TP3_Simulacion
             this.panel1.Controls.Add(this.rbUniforme);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(173, 149);
+            this.panel1.Size = new System.Drawing.Size(165, 143);
             this.panel1.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(13, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 18);
+            this.label1.Size = new System.Drawing.Size(104, 20);
             this.label1.TabIndex = 4;
             this.label1.Text = "Distribucion";
             // 
             // rdExponencialNegativa
             // 
             this.rdExponencialNegativa.AutoSize = true;
+            this.rdExponencialNegativa.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.rdExponencialNegativa.Location = new System.Drawing.Point(16, 112);
             this.rdExponencialNegativa.Name = "rdExponencialNegativa";
-            this.rdExponencialNegativa.Size = new System.Drawing.Size(126, 17);
+            this.rdExponencialNegativa.Size = new System.Drawing.Size(134, 17);
             this.rdExponencialNegativa.TabIndex = 3;
             this.rdExponencialNegativa.TabStop = true;
             this.rdExponencialNegativa.Text = "exponencial negativa";
@@ -109,9 +112,10 @@ namespace TP3_Simulacion
             // rdPoisson
             // 
             this.rdPoisson.AutoSize = true;
+            this.rdPoisson.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.rdPoisson.Location = new System.Drawing.Point(16, 89);
             this.rdPoisson.Name = "rdPoisson";
-            this.rdPoisson.Size = new System.Drawing.Size(62, 17);
+            this.rdPoisson.Size = new System.Drawing.Size(65, 17);
             this.rdPoisson.TabIndex = 2;
             this.rdPoisson.TabStop = true;
             this.rdPoisson.Text = "Poisson";
@@ -121,9 +125,10 @@ namespace TP3_Simulacion
             // rdNormal
             // 
             this.rdNormal.AutoSize = true;
+            this.rdNormal.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.rdNormal.Location = new System.Drawing.Point(16, 66);
             this.rdNormal.Name = "rdNormal";
-            this.rdNormal.Size = new System.Drawing.Size(58, 17);
+            this.rdNormal.Size = new System.Drawing.Size(62, 17);
             this.rdNormal.TabIndex = 1;
             this.rdNormal.TabStop = true;
             this.rdNormal.Text = "Normal";
@@ -133,9 +138,10 @@ namespace TP3_Simulacion
             // rbUniforme
             // 
             this.rbUniforme.AutoSize = true;
+            this.rbUniforme.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.rbUniforme.Location = new System.Drawing.Point(16, 43);
             this.rbUniforme.Name = "rbUniforme";
-            this.rbUniforme.Size = new System.Drawing.Size(67, 17);
+            this.rbUniforme.Size = new System.Drawing.Size(73, 17);
             this.rbUniforme.TabIndex = 0;
             this.rbUniforme.TabStop = true;
             this.rbUniforme.Text = "Uniforme";
@@ -145,49 +151,56 @@ namespace TP3_Simulacion
             // Muestra
             // 
             this.Muestra.AutoSize = true;
-            this.Muestra.Location = new System.Drawing.Point(212, 12);
+            this.Muestra.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.Muestra.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Muestra.Location = new System.Drawing.Point(199, 12);
             this.Muestra.Name = "Muestra";
-            this.Muestra.Size = new System.Drawing.Size(87, 13);
+            this.Muestra.Size = new System.Drawing.Size(94, 13);
             this.Muestra.TabIndex = 1;
             this.Muestra.Text = "Tamaño Muestra";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 68);
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(11, 62);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 13);
+            this.label2.Size = new System.Drawing.Size(48, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Minimo";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 39);
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label3.Location = new System.Drawing.Point(11, 33);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 13);
+            this.label3.Size = new System.Drawing.Size(50, 13);
             this.label3.TabIndex = 3;
             this.label3.Text = "Maximo";
             // 
             // txtN
             // 
-            this.txtN.Location = new System.Drawing.Point(316, 9);
+            this.txtN.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.txtN.Location = new System.Drawing.Point(303, 9);
             this.txtN.Name = "txtN";
-            this.txtN.Size = new System.Drawing.Size(33, 20);
+            this.txtN.Size = new System.Drawing.Size(33, 22);
             this.txtN.TabIndex = 4;
             // 
             // txtMin
             // 
-            this.txtMin.Location = new System.Drawing.Point(59, 65);
+            this.txtMin.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.txtMin.Location = new System.Drawing.Point(64, 59);
             this.txtMin.Name = "txtMin";
-            this.txtMin.Size = new System.Drawing.Size(54, 20);
+            this.txtMin.Size = new System.Drawing.Size(54, 22);
             this.txtMin.TabIndex = 5;
             // 
             // txtMax
             // 
-            this.txtMax.Location = new System.Drawing.Point(59, 36);
+            this.txtMax.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.txtMax.Location = new System.Drawing.Point(64, 30);
             this.txtMax.Name = "txtMax";
-            this.txtMax.Size = new System.Drawing.Size(54, 20);
+            this.txtMax.Size = new System.Drawing.Size(54, 22);
             this.txtMax.TabIndex = 6;
             // 
             // grpUniforme
@@ -196,9 +209,11 @@ namespace TP3_Simulacion
             this.grpUniforme.Controls.Add(this.label2);
             this.grpUniforme.Controls.Add(this.txtMin);
             this.grpUniforme.Controls.Add(this.label3);
-            this.grpUniforme.Location = new System.Drawing.Point(215, 41);
+            this.grpUniforme.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.grpUniforme.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.grpUniforme.Location = new System.Drawing.Point(193, 41);
             this.grpUniforme.Name = "grpUniforme";
-            this.grpUniforme.Size = new System.Drawing.Size(134, 120);
+            this.grpUniforme.Size = new System.Drawing.Size(134, 100);
             this.grpUniforme.TabIndex = 7;
             this.grpUniforme.TabStop = false;
             this.grpUniforme.Text = "Uniforme";
@@ -207,9 +222,11 @@ namespace TP3_Simulacion
             // 
             this.lblMedia.AutoSize = true;
             this.lblMedia.Enabled = false;
-            this.lblMedia.Location = new System.Drawing.Point(369, 77);
+            this.lblMedia.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.lblMedia.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblMedia.Location = new System.Drawing.Point(344, 86);
             this.lblMedia.Name = "lblMedia";
-            this.lblMedia.Size = new System.Drawing.Size(36, 13);
+            this.lblMedia.Size = new System.Drawing.Size(40, 13);
             this.lblMedia.TabIndex = 8;
             this.lblMedia.Text = "Media";
             // 
@@ -217,40 +234,47 @@ namespace TP3_Simulacion
             // 
             this.lblLambda.AutoSize = true;
             this.lblLambda.Enabled = false;
-            this.lblLambda.Location = new System.Drawing.Point(360, 116);
+            this.lblLambda.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.lblLambda.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblLambda.Location = new System.Drawing.Point(344, 126);
             this.lblLambda.Name = "lblLambda";
-            this.lblLambda.Size = new System.Drawing.Size(45, 13);
+            this.lblLambda.Size = new System.Drawing.Size(49, 13);
             this.lblLambda.TabIndex = 9;
             this.lblLambda.Text = "Lambda";
             // 
             // txtMedia
             // 
+            this.txtMedia.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtMedia.Enabled = false;
-            this.txtMedia.Location = new System.Drawing.Point(433, 70);
+            this.txtMedia.Location = new System.Drawing.Point(439, 82);
             this.txtMedia.Name = "txtMedia";
-            this.txtMedia.Size = new System.Drawing.Size(33, 20);
+            this.txtMedia.Size = new System.Drawing.Size(33, 22);
             this.txtMedia.TabIndex = 10;
             // 
             // txtLambda
             // 
+            this.txtLambda.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtLambda.Enabled = false;
-            this.txtLambda.Location = new System.Drawing.Point(433, 112);
+            this.txtLambda.Location = new System.Drawing.Point(439, 123);
             this.txtLambda.Name = "txtLambda";
-            this.txtLambda.Size = new System.Drawing.Size(33, 20);
+            this.txtLambda.Size = new System.Drawing.Size(33, 22);
             this.txtLambda.TabIndex = 11;
             // 
             // lstNumeros
             // 
+            this.lstNumeros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(35)))), ((int)(((byte)(51)))));
+            this.lstNumeros.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lstNumeros.FormattingEnabled = true;
-            this.lstNumeros.Location = new System.Drawing.Point(12, 196);
+            this.lstNumeros.Location = new System.Drawing.Point(12, 218);
             this.lstNumeros.Name = "lstNumeros";
-            this.lstNumeros.Size = new System.Drawing.Size(120, 329);
+            this.lstNumeros.Size = new System.Drawing.Size(120, 316);
             this.lstNumeros.TabIndex = 12;
             // 
             // grillaDatos
             // 
             this.grillaDatos.AllowUserToAddRows = false;
             this.grillaDatos.AllowUserToDeleteRows = false;
+            this.grillaDatos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(35)))), ((int)(((byte)(51)))));
             this.grillaDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grillaDatos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Intervalo,
@@ -258,10 +282,10 @@ namespace TP3_Simulacion
             this.Fe,
             this.C,
             this.Cacu});
-            this.grillaDatos.Location = new System.Drawing.Point(156, 194);
+            this.grillaDatos.Location = new System.Drawing.Point(166, 217);
             this.grillaDatos.Name = "grillaDatos";
             this.grillaDatos.ReadOnly = true;
-            this.grillaDatos.Size = new System.Drawing.Size(543, 331);
+            this.grillaDatos.Size = new System.Drawing.Size(543, 317);
             this.grillaDatos.TabIndex = 14;
             // 
             // Intervalo
@@ -296,56 +320,72 @@ namespace TP3_Simulacion
             // 
             // btnGenerar
             // 
-            this.btnGenerar.Location = new System.Drawing.Point(490, 138);
+            this.btnGenerar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(20)))), ((int)(((byte)(60)))));
+            this.btnGenerar.FlatAppearance.BorderColor = System.Drawing.Color.Thistle;
+            this.btnGenerar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerar.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.btnGenerar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnGenerar.Location = new System.Drawing.Point(493, 173);
             this.btnGenerar.Name = "btnGenerar";
-            this.btnGenerar.Size = new System.Drawing.Size(104, 23);
+            this.btnGenerar.Size = new System.Drawing.Size(100, 38);
             this.btnGenerar.TabIndex = 15;
             this.btnGenerar.Text = "Generar";
-            this.btnGenerar.UseVisualStyleBackColor = true;
+            this.btnGenerar.UseVisualStyleBackColor = false;
             this.btnGenerar.Click += new System.EventHandler(this.btnGenerar_Click);
             // 
             // btnLimpiarCampos
             // 
-            this.btnLimpiarCampos.Location = new System.Drawing.Point(600, 138);
+            this.btnLimpiarCampos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(20)))), ((int)(((byte)(60)))));
+            this.btnLimpiarCampos.FlatAppearance.BorderColor = System.Drawing.Color.Thistle;
+            this.btnLimpiarCampos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiarCampos.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.btnLimpiarCampos.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnLimpiarCampos.Location = new System.Drawing.Point(609, 173);
             this.btnLimpiarCampos.Name = "btnLimpiarCampos";
-            this.btnLimpiarCampos.Size = new System.Drawing.Size(99, 23);
+            this.btnLimpiarCampos.Size = new System.Drawing.Size(100, 38);
             this.btnLimpiarCampos.TabIndex = 16;
             this.btnLimpiarCampos.Text = "Limpiar Campos";
-            this.btnLimpiarCampos.UseVisualStyleBackColor = true;
+            this.btnLimpiarCampos.UseVisualStyleBackColor = false;
             this.btnLimpiarCampos.Click += new System.EventHandler(this.btnLimpiarCampos_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(487, 112);
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label4.Location = new System.Drawing.Point(490, 41);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(113, 13);
+            this.label4.Size = new System.Drawing.Size(124, 13);
             this.label4.TabIndex = 17;
             this.label4.Text = "Cantidad de Intervalos";
             // 
             // txtCantidadIntervalos
             // 
-            this.txtCantidadIntervalos.Location = new System.Drawing.Point(650, 109);
+            this.txtCantidadIntervalos.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.txtCantidadIntervalos.Location = new System.Drawing.Point(644, 38);
             this.txtCantidadIntervalos.Name = "txtCantidadIntervalos";
-            this.txtCantidadIntervalos.Size = new System.Drawing.Size(49, 20);
+            this.txtCantidadIntervalos.Size = new System.Drawing.Size(49, 22);
             this.txtCantidadIntervalos.TabIndex = 18;
             // 
             // lblDesviacion
             // 
             this.lblDesviacion.AutoSize = true;
             this.lblDesviacion.Enabled = false;
-            this.lblDesviacion.Location = new System.Drawing.Point(355, 41);
+            this.lblDesviacion.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.lblDesviacion.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblDesviacion.Location = new System.Drawing.Point(344, 41);
             this.lblDesviacion.Name = "lblDesviacion";
-            this.lblDesviacion.Size = new System.Drawing.Size(60, 13);
+            this.lblDesviacion.Size = new System.Drawing.Size(63, 13);
             this.lblDesviacion.TabIndex = 19;
             this.lblDesviacion.Text = "Desviacion";
             // 
             // txtDesviacion
             // 
+            this.txtDesviacion.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtDesviacion.Enabled = false;
-            this.txtDesviacion.Location = new System.Drawing.Point(433, 34);
+            this.txtDesviacion.Location = new System.Drawing.Point(439, 38);
             this.txtDesviacion.Name = "txtDesviacion";
-            this.txtDesviacion.Size = new System.Drawing.Size(33, 20);
+            this.txtDesviacion.Size = new System.Drawing.Size(33, 22);
             this.txtDesviacion.TabIndex = 20;
             // 
             // Grafico
@@ -354,29 +394,31 @@ namespace TP3_Simulacion
             this.Grafico.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.Grafico.Legends.Add(legend1);
-            this.Grafico.Location = new System.Drawing.Point(731, 2);
+            this.Grafico.Location = new System.Drawing.Point(737, 12);
             this.Grafico.Name = "Grafico";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.Grafico.Series.Add(series1);
-            this.Grafico.Size = new System.Drawing.Size(452, 523);
+            this.Grafico.Size = new System.Drawing.Size(452, 524);
             this.Grafico.TabIndex = 21;
             this.Grafico.Text = "chart1";
             // 
             // Chi
             // 
             this.Chi.AutoSize = true;
-            this.Chi.Location = new System.Drawing.Point(499, 48);
+            this.Chi.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.Chi.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Chi.Location = new System.Drawing.Point(490, 86);
             this.Chi.Name = "Chi";
-            this.Chi.Size = new System.Drawing.Size(76, 13);
+            this.Chi.Size = new System.Drawing.Size(81, 13);
             this.Chi.TabIndex = 22;
             this.Chi.Text = "Chi Tabulado: ";
             // 
             // lblConclusion
             // 
             this.lblConclusion.AutoSize = true;
-            this.lblConclusion.Location = new System.Drawing.Point(499, 82);
+            this.lblConclusion.Location = new System.Drawing.Point(490, 129);
             this.lblConclusion.Name = "lblConclusion";
             this.lblConclusion.Size = new System.Drawing.Size(0, 13);
             this.lblConclusion.TabIndex = 24;
@@ -384,7 +426,8 @@ namespace TP3_Simulacion
             // txtChi
             // 
             this.txtChi.AutoSize = true;
-            this.txtChi.Location = new System.Drawing.Point(581, 48);
+            this.txtChi.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.txtChi.Location = new System.Drawing.Point(597, 86);
             this.txtChi.Name = "txtChi";
             this.txtChi.Size = new System.Drawing.Size(0, 13);
             this.txtChi.TabIndex = 25;
@@ -393,6 +436,7 @@ namespace TP3_Simulacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(20)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(1225, 546);
             this.Controls.Add(this.txtChi);
             this.Controls.Add(this.lblConclusion);
@@ -414,6 +458,7 @@ namespace TP3_Simulacion
             this.Controls.Add(this.grpUniforme);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtN);
+            this.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.Name = "PruebaDeBondad";
             this.Text = "Prueba de Bondad";
             this.Load += new System.EventHandler(this.Form1_Load);
