@@ -29,9 +29,9 @@ namespace TP3_Simulacion
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.rdExponencialNegativa = new System.Windows.Forms.RadioButton();
@@ -64,8 +64,8 @@ namespace TP3_Simulacion
             this.txtDesviacion = new System.Windows.Forms.TextBox();
             this.Grafico = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.Chi = new System.Windows.Forms.Label();
-            this.txtChi = new System.Windows.Forms.TextBox();
             this.lblConclusion = new System.Windows.Forms.Label();
+            this.txtChi = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.grpUniforme.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grillaDatos)).BeginInit();
@@ -350,16 +350,16 @@ namespace TP3_Simulacion
             // 
             // Grafico
             // 
-            chartArea3.Name = "ChartArea1";
-            this.Grafico.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.Grafico.Legends.Add(legend3);
+            chartArea1.Name = "ChartArea1";
+            this.Grafico.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.Grafico.Legends.Add(legend1);
             this.Grafico.Location = new System.Drawing.Point(731, 2);
             this.Grafico.Name = "Grafico";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.Grafico.Series.Add(series3);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.Grafico.Series.Add(series1);
             this.Grafico.Size = new System.Drawing.Size(452, 523);
             this.Grafico.TabIndex = 21;
             this.Grafico.Text = "chart1";
@@ -369,16 +369,9 @@ namespace TP3_Simulacion
             this.Chi.AutoSize = true;
             this.Chi.Location = new System.Drawing.Point(499, 48);
             this.Chi.Name = "Chi";
-            this.Chi.Size = new System.Drawing.Size(22, 13);
+            this.Chi.Size = new System.Drawing.Size(76, 13);
             this.Chi.TabIndex = 22;
-            this.Chi.Text = "Chi";
-            // 
-            // txtChi
-            // 
-            this.txtChi.Location = new System.Drawing.Point(527, 48);
-            this.txtChi.Name = "txtChi";
-            this.txtChi.Size = new System.Drawing.Size(49, 20);
-            this.txtChi.TabIndex = 23;
+            this.Chi.Text = "Chi Tabulado: ";
             // 
             // lblConclusion
             // 
@@ -388,13 +381,21 @@ namespace TP3_Simulacion
             this.lblConclusion.Size = new System.Drawing.Size(0, 13);
             this.lblConclusion.TabIndex = 24;
             // 
+            // txtChi
+            // 
+            this.txtChi.AutoSize = true;
+            this.txtChi.Location = new System.Drawing.Point(581, 48);
+            this.txtChi.Name = "txtChi";
+            this.txtChi.Size = new System.Drawing.Size(0, 13);
+            this.txtChi.TabIndex = 25;
+            // 
             // PruebaDeBondad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1225, 546);
-            this.Controls.Add(this.lblConclusion);
             this.Controls.Add(this.txtChi);
+            this.Controls.Add(this.lblConclusion);
             this.Controls.Add(this.Chi);
             this.Controls.Add(this.Grafico);
             this.Controls.Add(this.txtDesviacion);
@@ -461,8 +462,8 @@ namespace TP3_Simulacion
         private System.Windows.Forms.TextBox txtDesviacion;
         private System.Windows.Forms.DataVisualization.Charting.Chart Grafico;
         private System.Windows.Forms.Label Chi;
-        private System.Windows.Forms.TextBox txtChi;
         private System.Windows.Forms.Label lblConclusion;
+        private System.Windows.Forms.Label txtChi;
     }
 }
 

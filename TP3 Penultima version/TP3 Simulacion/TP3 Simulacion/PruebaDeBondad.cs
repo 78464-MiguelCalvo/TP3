@@ -263,26 +263,38 @@ namespace TP3_Simulacion
                     double Fo = Convert.ToDouble(contador);
                     double resta = Fo - Fe;
 
-                    decimal c = Convert.ToDecimal(Math.Pow(resta, 2)) / (decimal)Fe;
-                    celdaC.Value = c;
-                    fila.Cells.Add(celdaC);
-
-                    //Celda Cacum
-                    DataGridViewTextBoxCell celdaCacum = new DataGridViewTextBoxCell();
-
-                    if (i == 0)
+                    if (Fe != 0)
                     {
-                        Cacum = (double)c;
+                        decimal c = Convert.ToDecimal(Math.Pow(resta, 2)) / (decimal)Fe;
+                        celdaC.Value = c;
+                        fila.Cells.Add(celdaC);
+
+                        //Celda Cacum
+                        DataGridViewTextBoxCell celdaCacum = new DataGridViewTextBoxCell();
+
+                        if (i == 0)
+                        {
+                            Cacum = (double)c;
+                        }
+                        else
+                        {
+                            Cacum += (double)c;
+                        }
+                        celdaCacum.Value = Cacum;
+                        fila.Cells.Add(celdaCacum);
+
+                        //AgregarFila
+                        grillaDatos.Rows.Add(fila);
                     }
                     else
                     {
-                        Cacum += (double)c;
-                    }
-                    celdaCacum.Value = Cacum;
-                    fila.Cells.Add(celdaCacum);
+                        MessageBox.Show("Se intentó dividir por 0. Error.");
+                        limparCampos();
+                        break;
 
-                    //AgregarFila
-                    grillaDatos.Rows.Add(fila);
+                    }
+                    
+
 
                     //// Grafico
                     string intervalo = Convert.ToString(valorMin) + "-" + Convert.ToString(valorMax);
