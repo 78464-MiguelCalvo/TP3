@@ -152,6 +152,7 @@ namespace TP3_Simulacion
                 double[] extremos = CalcularExtremos(list);
                 double valorMin = Math.Round(extremos[0], 4);
                 double valorMax = Math.Round(extremos[1], 4);
+                Console.WriteLine(valorMax.ToString(), valorMin);
                 double Prueba = 0;
                 double ancho = Math.Round((valorMax - valorMin) / Convert.ToDouble(txtCantidadIntervalos.Text), 4);
 
@@ -232,6 +233,7 @@ namespace TP3_Simulacion
 
                     if (rdExponencialNegativa.Checked)
                     {
+
                         double lambda = 1 / Convert.ToDouble(txtMedia.Text);
                         CeldaAux = (FrecuenciaAcumuladaExponencial(lambda, valorMax) - FrecuenciaAcumuladaExponencial(lambda, valorMin)) * N;
                     }
@@ -244,9 +246,14 @@ namespace TP3_Simulacion
                     }
                     if (rdPoisson.Checked)
                     {
+                        N = list.Count();
                         double lambda = Convert.ToDouble(txtLambda.Text);
-                        CeldaAux = (FrecuenciaAcumuladaPoisson(valorMax, lambda) - FrecuenciaAcumuladaPoisson(valorMin, lambda));
+                        CeldaAux = (FrecuenciaAcumuladaPoisson(valorMax, lambda) - FrecuenciaAcumuladaPoisson(valorMin, lambda)) * N;
+                        //MessageBox.Show("Con valor max: "+ Convert.ToString(FrecuenciaAcumuladaPoisson(valorMax, lambda) + "Con valor min: "+ Convert.ToString(FrecuenciaAcumuladaPoisson(valorMin, lambda) + " = "+ CeldaAux )));
+                        //MessageBox.Show("Con valor min: "+Convert.ToString(FrecuenciaAcumuladaPoisson(valorMin, lambda)));
+                        //MessageBox.Show("Resta: " + CeldaAux);
                     }
+
                     celdaFe.Value = CeldaAux;
                     fila.Cells.Add(celdaFe);
 
@@ -255,6 +262,7 @@ namespace TP3_Simulacion
                     double Fe = CeldaAux;
                     double Fo = Convert.ToDouble(contador);
                     double resta = Fo - Fe;
+
                     decimal c = Convert.ToDecimal(Math.Pow(resta, 2)) / (decimal)Fe;
                     celdaC.Value = c;
                     fila.Cells.Add(celdaC);
@@ -294,12 +302,12 @@ namespace TP3_Simulacion
 
                 if (Cacum < Convert.ToDouble(txtChi.Text))
                 {
-                    lblConclusion.Text = "No se rechaza la hipotesis Planteada";
+                    lblConclusion.Text = "No se rechaza la hipotesis planteada.";
                     lblConclusion.BackColor = System.Drawing.Color.Green;
                 }
                 else
                 {
-                    lblConclusion.Text = "Se rechaza la hipotesis Planteada";
+                    lblConclusion.Text = "Se rechaza la hipotesis planteada.";
                     lblConclusion.BackColor = System.Drawing.Color.Red;
                 }
             }
@@ -365,9 +373,10 @@ namespace TP3_Simulacion
 
         public double FrecuenciaAcumuladaPoisson(double x, double lambda)
         {
-            MathNet.Numerics.Distributions.Poisson resultado = new MathNet.Numerics.Distributions.Poisson(lambda);
-            return resultado.CumulativeDistribution(x);
-            //return MathNet.Numerics.Distributions.Poisson.CDF(lambda, x);
+            //MathNet.Numerics.Distributions.Poisson resultado = new MathNet.Numerics.Distributions.Poisson(lambda);
+            //return resultado.CumulativeDistribution(x);
+            //MessageBox.Show(Convert.ToString(MathNet.Numerics.Distributions.Poisson.CDF(lambda, x)));
+            return (MathNet.Numerics.Distributions.Poisson.CDF(lambda, x));
         }
 
         public void limparCampos()

@@ -30,3 +30,25 @@ C:\Users\migue\OneDrive\Escritorio\TP3-main\TP3 Simulacion\TP3 Simulacion\bin\De
 C:\Users\migue\OneDrive\Escritorio\TP3-main\TP3 Simulacion\TP3 Simulacion\obj\Debug\TP3 Simulacion.csproj.CopyComplete
 C:\Users\migue\OneDrive\Escritorio\TP3-main\TP3 Simulacion\TP3 Simulacion\bin\Debug\MathNet.Numerics.dll
 C:\Users\migue\OneDrive\Escritorio\TP3-main\TP3 Simulacion\TP3 Simulacion\bin\Debug\MathNet.Numerics.xml
+D:\Facultad\2021\SIM\TPs\TP3\TP3Miguel\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\bin\Debug\TP3 Simulacion.exe.config
+D:\Facultad\2021\SIM\TPs\TP3\TP3Miguel\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\bin\Debug\TP3 Simulacion.exe
+D:\Facultad\2021\SIM\TPs\TP3\TP3Miguel\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\bin\Debug\TP3 Simulacion.pdb
+D:\Facultad\2021\SIM\TPs\TP3\TP3Miguel\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\bin\Debug\LiveCharts.dll
+D:\Facultad\2021\SIM\TPs\TP3\TP3Miguel\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\bin\Debug\LiveCharts.WinForms.dll
+D:\Facultad\2021\SIM\TPs\TP3\TP3Miguel\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\bin\Debug\LiveCharts.Wpf.dll
+D:\Facultad\2021\SIM\TPs\TP3\TP3Miguel\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\bin\Debug\MathNet.Numerics.dll
+D:\Facultad\2021\SIM\TPs\TP3\TP3Miguel\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\bin\Debug\LiveCharts.pdb
+D:\Facultad\2021\SIM\TPs\TP3\TP3Miguel\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\bin\Debug\LiveCharts.xml
+D:\Facultad\2021\SIM\TPs\TP3\TP3Miguel\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\bin\Debug\LiveCharts.WinForms.pdb
+D:\Facultad\2021\SIM\TPs\TP3\TP3Miguel\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\bin\Debug\LiveCharts.WinForms.xml
+D:\Facultad\2021\SIM\TPs\TP3\TP3Miguel\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\bin\Debug\LiveCharts.Wpf.pdb
+D:\Facultad\2021\SIM\TPs\TP3\TP3Miguel\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\bin\Debug\LiveCharts.Wpf.xml
+D:\Facultad\2021\SIM\TPs\TP3\TP3Miguel\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\bin\Debug\MathNet.Numerics.xml
+D:\Facultad\2021\SIM\TPs\TP3\TP3Miguel\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\obj\Debug\TP3 Simulacion.csprojAssemblyReference.cache
+D:\Facultad\2021\SIM\TPs\TP3\TP3Miguel\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\obj\Debug\TP3_Simulacion.Properties.Resources.resources
+D:\Facultad\2021\SIM\TPs\TP3\TP3Miguel\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\obj\Debug\TP3_Simulacion.PruebaDeBondad.resources
+D:\Facultad\2021\SIM\TPs\TP3\TP3Miguel\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\obj\Debug\TP3 Simulacion.csproj.GenerateResource.cache
+D:\Facultad\2021\SIM\TPs\TP3\TP3Miguel\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\obj\Debug\TP3 Simulacion.csproj.CoreCompileInputs.cache
+D:\Facultad\2021\SIM\TPs\TP3\TP3Miguel\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\obj\Debug\TP3 Simulacion.csproj.CopyComplete
+D:\Facultad\2021\SIM\TPs\TP3\TP3Miguel\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\obj\Debug\TP3 Simulacion.exe
+D:\Facultad\2021\SIM\TPs\TP3\TP3Miguel\TP3\TP3 Penultima version\TP3 Simulacion\TP3 Simulacion\obj\Debug\TP3 Simulacion.pdb

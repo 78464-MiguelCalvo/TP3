@@ -35,14 +35,16 @@ namespace BibliotecaTP3SIM
             int x = -1;
             double a = Math.Exp(-lambda);
             List<double> lista = new List<double>();
-            var Random = new Random();
-            while (p >= a)
+            
+            do
             {
-                var u = Random.NextDouble();
+                var rnd = new Random();
+                double u = rnd.NextDouble();
                 p = p * u;
                 x = x + 1;
                 lista.Add(x);
-            }
+            } while (p >= a);
+
             return lista;
             
         }
