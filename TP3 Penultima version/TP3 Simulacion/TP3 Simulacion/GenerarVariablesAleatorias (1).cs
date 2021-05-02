@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Windows.Controls;
 
 namespace BibliotecaTP3SIM
 {
@@ -12,6 +13,9 @@ namespace BibliotecaTP3SIM
 
         }
         
+        private List<Double> intervalosPoisson = new List<double>();
+        private List<double> varAleatorias = new List<double>();
+        private Random rnd = new Random();
 
         private double DisUniforme(double pseudo, int min, int max)
         {
@@ -29,25 +33,48 @@ namespace BibliotecaTP3SIM
             return res;
         }
 
-        public List<double> SerieDisPoisson(double lambda)
-        {
-            double p = 1;
-            int x = -1;
-            double a = Math.Exp(-lambda);
-            List<double> lista = new List<double>();
-            
-            do
-            {
-                var rnd = new Random();
-                double u = rnd.NextDouble();
-                p = p * u;
-                x = x + 1;
-                lista.Add(x);
-            } while (p >= a);
 
-            return lista;
-            
+
+        public List<double> calcularVariablesPoisson(int cantidad, double lambda)
+        {
+            /* Hice que el X "máximo" sea 4 veces lambda, de esta forma la probabilidad
+             * de que un valor 4 veces mayor a lambda aparezca suele ser inferior al 1% y es rarísimo que se rompa. */
+            double maxX = 4 * lambda;
+
+            for (int j = 0; j < maxX; j++)
+            {
+                double limiteSuperior = MathNet.Numerics.Distributions.Poisson.CDF(lambda, j);
+                intervalosPoisson.Add(limiteSuperior);
+            }
+
+
+            for (int i = 0; i < cantidad; i++)
+            {
+                varAleatorias.Add(calcularSiguienteVariable());
+            }
+
+            return varAleatorias;
         }
+
+        public double calcularSiguienteVariable()
+        {
+            double aleatorioDecimal = rnd.NextDouble();
+
+            for (int variablePoisson = 0; variablePoisson < intervalosPoisson.Count; variablePoisson++)
+            {
+
+                if (aleatorioDecimal <= intervalosPoisson[variablePoisson])
+                {
+                    return (double)variablePoisson;
+                }
+            }
+
+            /* Esto hace que todos los números aleatorios correspondientes a la cola
+                    de la distribución, sean metidos en la última categoría. */
+            return intervalosPoisson.Count - 1;
+        }
+
+
 
 
         public List<double> SerieDisNormal(int n,double media, double desviacion)

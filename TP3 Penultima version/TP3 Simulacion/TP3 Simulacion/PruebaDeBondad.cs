@@ -66,8 +66,8 @@ namespace TP3_Simulacion
             {
                 txtLambda.Enabled = true;
                 lblLambda.Enabled = true;
-                txtN.Enabled = false;
-                Muestra.Enabled = false;
+                txtN.Enabled = true;
+                Muestra.Enabled = true;
             }
             else
             {
@@ -133,7 +133,7 @@ namespace TP3_Simulacion
             if (rdPoisson.Checked)
             {
                 double lambda = Convert.ToDouble(txtLambda.Text);
-                list = Metodos.SerieDisPoisson(lambda);
+                list = Metodos.calcularVariablesPoisson(N, lambda);
             }
 
             // Agregar valores a la lista
@@ -141,7 +141,7 @@ namespace TP3_Simulacion
             {
                 lstNumeros.Items.Add(Math.Round(item,4));
             }
-
+            Console.WriteLine(lstNumeros.ToString());
             // Prueba de bondad
             if (txtCantidadIntervalos.Text.Equals(""))
             {
@@ -194,7 +194,7 @@ namespace TP3_Simulacion
                         {
                             foreach (double item in lstNumeros.Items)
                             {
-                                if (item > valorMin)
+                                if (item >= valorMin)
                                 {
                                     contador = contador + 1;
                                 }
